@@ -2,13 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CountriesComponent } from './countries/countries.component';
+import { RouterModule, Route } from '@angular/router';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { HomeComponent } from './home/home.component';
+
+const myRoutes:Route[] = [
+  { path: "", component: HomeComponent }
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountriesComponent,
+    CountryDetailComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(myRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
