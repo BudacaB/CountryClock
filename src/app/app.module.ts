@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CountriesComponent } from './countries/countries.component';
-import { RouterModule, Route } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { HomeComponent } from './home/home.component';
 
-const myRoutes:Route[] = [
-  { path: "", component: HomeComponent }
+const myRoutes: Routes = [
+  { path: '', component: HomeComponent }
 ]
 
 @NgModule({
