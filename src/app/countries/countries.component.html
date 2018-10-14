@@ -1,3 +1,13 @@
-<p>
-  Aici sunt tarile mele
-</p>
+<div *ngIf="hasServerResponded">
+  <!-- {{romania.name}} -->
+  <div *ngFor="let tara of tari">
+    <p>
+      {{tara.name}}
+    </p>
+      
+        <!-- <pre>
+          {{tara.population|number}}
+        </pre> -->
+      
+  </div>
+</div>
