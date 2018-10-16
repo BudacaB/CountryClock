@@ -22,3 +22,7 @@ Appul va afisa toate tarile din lume si când dai clic pe o tara, imi arata ora 
 3. When country name is clicked, page should display local time in selected country (needs moment.js library installed)
 
 Focus on Angular course and HTML/CSS
+
+------------------------
+
+Countries API provide cooridantes (storable as JSON obj) - to integrate with NASA API and get imagery

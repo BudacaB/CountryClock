@@ -15,8 +15,7 @@ export class CountriesComponent implements OnInit {
   ngOnInit() {
    /*  this.countriesService.getSingleCountry().subscribe(
     (response) => {
-      //this.romania = response[0]
-
+      this.romania = response[0]
       this.hasServerResponded = true;
     }
     ) */
