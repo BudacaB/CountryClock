@@ -1,13 +1,24 @@
-<div *ngIf="hasServerResponded">
-  <!-- {{romania.name}} -->
+<table cellpadding="10" *ngIf="hasServerResponded">
+  <tr>
+    <th colspan="2">Country</th>
+    <th colspan="2">Capital</th>
+  </tr>
+  <tr *ngFor="let tara of tari">
+    <td colspan="2"><a href="">{{tara.name}}</a></td>
+    <td colspan="2">{{tara.capital}}</td>
+  </tr>
+</table>
+
+
+
+<!-- <div *ngIf="hasServerResponded">
+   {{romania.name}}
   <div *ngFor="let tara of tari">
     <p>
       {{tara.name}}
     </p>
-      
-        <!-- <pre>
+        <pre>
           {{tara.population|number}}
-        </pre> -->
-      
+        </pre>
   </div>
-</div>
+</div> -->
