@@ -1,3 +1,12 @@
-<p>
-  Aici sunt detalii legate de o singura tara
-</p>
+<table cellpadding="10" *ngIf="hasServerResponded">
+  <tr>
+    <th colspan="2">Country</th>
+    <th colspan="2">Capital</th>
+    <th colspan="2">TZ</th>
+  </tr>
+  <tr *ngFor="let tara of tari" script src="currentTime.js">
+    <td colspan="2"><a href="">{{tara.name}}</a></td>
+    <td colspan="2">{{tara.capital}}</td>
+    <td colspan="2">{{tara.timezones}}</td>
+  </tr>
+</table>

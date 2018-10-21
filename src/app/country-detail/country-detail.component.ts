@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CountriesService } from '../countries.service';
 
 @Component({
   selector: 'app-country-detail',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryDetailComponent implements OnInit {
 
-  constructor() { }
+  tari: any;
+  hasServerResponded: boolean = false
+  constructor(private countriesService: CountriesService) { }
 
   ngOnInit() {
+    this.countriesService.getAllCountries().subscribe(
+      (response) => {
+        //this.romania = response[0]
+        this.tari = response
+        this.hasServerResponded = true;
+      }
+      )
   }
-
 }
+
