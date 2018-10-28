@@ -9,7 +9,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
 import { HomeComponent } from './home/home.component';
 
 const myRoutes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
 ]
 
 @NgModule({
