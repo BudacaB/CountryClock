@@ -28,4 +28,4 @@ Focus on Angular course and HTML/CSS & Bootstrap
 
 ------------------------
 
-Countries API provide cooridantes (storable as JSON obj) - to integrate with NASA API and get imagery
+Countries API provide cooridantes (storable as JSON obj) - to integrate with NASA API and get imagery - https://api.nasa.gov/api.html#imagery 
