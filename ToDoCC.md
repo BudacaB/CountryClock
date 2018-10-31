@@ -29,3 +29,16 @@ Focus on Angular course and HTML/CSS & Bootstrap
 ------------------------
 
 Countries API provide cooridantes (storable as JSON obj) - to integrate with NASA API and get imagery - https://api.nasa.gov/api.html#imagery 
+
+-------------------------
+
+Create first browser game (C# / Unity):
+
+1. 'Razboi' / or poker game - card game
+    - Angular
+    - fontawesome cards - CSS styling // (instead of using TwoJS for drawing)
+    - node.js server - game host
+
+Or
+
+2. Meme generator
