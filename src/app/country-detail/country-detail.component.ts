@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CountriesService } from '../countries.service';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-country-detail',
@@ -7,19 +9,28 @@ import { CountriesService } from '../countries.service';
   styleUrls: ['./country-detail.component.css']
 })
 export class CountryDetailComponent implements OnInit {
+  countryName: string;
+  country: any;
 
-  tari: any;
-  hasServerResponded: boolean = false
-  constructor(private countriesService: CountriesService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private countryService: CountriesService
+  ) {}
 
   ngOnInit() {
-    this.countriesService.getAllCountries().subscribe(
-      (response) => {
-        //this.romania = response[0]
-        this.tari = response
-        this.hasServerResponded = true;
-      }
+    this.route.paramMap.pipe(
+      map((params: ParamMap) => {
+        var id = params.get('id')
+        return id;
+      })
+    ).subscribe((result) => {
+      this.countryName = result;
+      this.countryService.getSingleCountry(this.countryName).subscribe(
+        (response) => this.country = response
       )
+      
+    })
   }
 }
 

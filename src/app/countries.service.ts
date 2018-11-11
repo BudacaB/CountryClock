@@ -6,16 +6,21 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CountriesService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private httpService: HttpClient) {}
 
-  getSingleCountry() {
-    const adresa = 'https://restcountries.eu/rest/v2/name/Romania';
-    return this.http.get(adresa)
+  getSingleCountry(countryIndicator) {
+    const adresa = 'https://restcountries.eu/rest/v2/name/' + countryIndicator;
+    return this.httpService.get(adresa)
   }
 
   getAllCountries() {
     const adresaAll = 'https://restcountries.eu/rest/v2/all';
-    return this.http.get(adresaAll)
+    return this.httpService.get(adresaAll)
+  }
+
+  test() {
+
   }
 }
+
 

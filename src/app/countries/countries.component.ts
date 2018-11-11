@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CountriesService } from '../countries.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-countries',
@@ -10,7 +11,8 @@ export class CountriesComponent implements OnInit {
   //romania: any;
   tari: any;
   hasServerResponded: boolean = false
-  constructor(private countriesService: CountriesService) { }
+  constructor(private countriesService: CountriesService, private router: Router) { }
+
 
   ngOnInit() {
    /*  this.countriesService.getSingleCountry().subscribe(
@@ -29,4 +31,10 @@ export class CountriesComponent implements OnInit {
       )
   }
 
+    seeCountryDetails(tara) {
+      this.router.navigate(["/country-detail/", tara]) 
+    }
+
 }
+
+

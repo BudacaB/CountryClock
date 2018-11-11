@@ -42,3 +42,12 @@ Create first browser game (C# / Unity):
 Or
 
 2. Meme generator
+
+
+========================
+
+11Nov:
+
+1. Style and center footer
+2. Show country name in big fonts
+3. Show local time in that country using moment.js based on the properties in the 'country' obj
