@@ -55,4 +55,4 @@ Or
 18Nov:
 
 1. Style country detail page - center (grid system from Bootstrap)
-2. Flag on same level/row with country name
+2. Flag on same level or row with country name
