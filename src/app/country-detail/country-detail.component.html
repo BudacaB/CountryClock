@@ -3,7 +3,18 @@
 </button>
 
 
-<div>{{countryName}}</div>
+<div id="country">{{countryName}}</div>
+
+<img class="flag" src="{{country.flag}}" alt="countryflag">
+
+<div class="time">
+  Local Time in {{ country.capital }}: <br> {{ localTime }}
+</div>
+
+
+
+<!-- <div>{{countryTimezone}}</div> -->
+
 
 
 

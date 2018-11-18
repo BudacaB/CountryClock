@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class CountriesComponent implements OnInit {
   //romania: any;
-  tari: any;
+  tari: Array<any>;
   hasServerResponded: boolean = false
   constructor(private countriesService: CountriesService, private router: Router) { }
 
@@ -25,7 +25,8 @@ export class CountriesComponent implements OnInit {
     this.countriesService.getAllCountries().subscribe(
       (response) => {
         //this.romania = response[0]
-        this.tari = response
+        let allCountries = response as Array<any>;
+        this.tari = allCountries.filter(this.hasCapital)
         this.hasServerResponded = true;
       }
       )
@@ -33,6 +34,11 @@ export class CountriesComponent implements OnInit {
 
     seeCountryDetails(tara) {
       this.router.navigate(["/country-detail/", tara]) 
+    }
+
+    hasCapital (tara: any) :boolean {
+      let has = (tara.capital != "");
+      return has;
     }
 
 }

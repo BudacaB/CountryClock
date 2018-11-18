@@ -2,3 +2,9 @@
     top: 120px;
     position: absolute;
 }
+
+.fixed-bottom {
+    text-align: center;
+    font-family: 'Allerta Stencil';
+    font-size: 25px;
+}

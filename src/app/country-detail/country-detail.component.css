@@ -9,3 +9,18 @@ th {
     text-align: center;
     border: 1px solid #333;
 }
+
+#country {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.time {
+    font-size: 70px;
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+}
+
+.flag {
+    width: 100px;
+    height: 80px;
+}

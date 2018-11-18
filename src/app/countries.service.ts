@@ -13,6 +13,13 @@ export class CountriesService {
     return this.httpService.get(adresa)
   }
 
+  // Trying to replicate above pointing to timezones property
+  /* getSingleCountryTZ(tz) {
+    const timezone = 'https://restcountries.eu/rest/v2/name?fields=timezones';
+    tz = tz;
+    return this.httpService.get(timezone)
+  } */
+
   getAllCountries() {
     const adresaAll = 'https://restcountries.eu/rest/v2/all';
     return this.httpService.get(adresaAll)
@@ -22,5 +29,6 @@ export class CountriesService {
 
   }
 }
+
 
 

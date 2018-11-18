@@ -51,3 +51,8 @@ Or
 1. Style and center footer
 2. Show country name in big fonts
 3. Show local time in that country using moment.js based on the properties in the 'country' obj
+
+18Nov:
+
+1. Style country detail page - center (grid system from Bootstrap)
+2. Flag on same level with country name
