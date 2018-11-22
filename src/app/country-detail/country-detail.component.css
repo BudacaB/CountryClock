@@ -13,14 +13,26 @@ th {
 #country {
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
-.time {
-    font-size: 70px;
+#time {
+    font-size: 40px;
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
 .flag {
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
+}
+
+#button {
+    position:relative;
+    left:53%;
+}
+
+.row {
+    position:relative;
+    left:18%;
+    margin-top:10%;
 }

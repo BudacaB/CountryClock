@@ -10,6 +10,11 @@ th {
     border: 1px solid #333;
 }
 
+table {
+    margin-left:30%; 
+    margin-right:10%;
+}
+
 @media screen and (max-width: 440px) {
     table {
         margin-top: 170px;
@@ -23,6 +28,6 @@ th {
 }
 
 .column-highlighter {
-    background-color: yellow;
+    background-color: rgb(136, 197, 57);
     font-size: larger
 }

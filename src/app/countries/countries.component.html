@@ -1,7 +1,7 @@
 <table cellpadding="10" *ngIf="hasServerResponded">
   <tr>
-    <th colspan="2">Country</th>
-    <th colspan="2">Capital</th>
+    <th colspan="2" class="column-highlighter">Country</th>
+    <th colspan="2" class="column-highlighter">Capital</th>
   </tr>
   <tr *ngFor="let tara of tari">
     <td colspan="2" class="column-highlighter">
@@ -9,7 +9,7 @@
       {{tara.name}}
     </a>
     </td>
-    <td colspan="2">{{tara.capital}}</td>
+    <td colspan="2" class="column-highlighter">{{tara.capital}}</td>
   </tr>
 </table>
 <br>

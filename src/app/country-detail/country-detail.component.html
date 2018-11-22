@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" routerLink="/home">
+<!-- <button type="button" class="btn btn-primary" routerLink="/home">
   Return to Countries
 </button>
 
@@ -9,15 +9,38 @@
 
 <div class="time">
   Local Time in {{ country.capital }}: <br> {{ localTime }}
-</div>
+</div> -->
 
 
 
 <!-- <div>{{countryTimezone}}</div> -->
 
 
+<button id="button" type="button" class="btn btn-primary" routerLink="/home">
+  Return to Countries
+</button>
 
 
 
+<!-- <div id="country">{{countryName}}
+  <img class="flag" src="{{country.flag}}" alt="countryflag">
+</div>
 
 
+
+<div class="time">
+  Local Time in {{ country.capital }}: <br> {{ localTime }}
+</div> -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm" id="country">
+      {{countryName}}
+      <img class="flag" src="{{country.flag}}" alt="countryflag">
+    </div>
+    <div class="col-sm" id="time">
+      Local Time in {{ country.capital }}: <br> {{ localTime }}
+    </div>
+  </div>
+</div>
