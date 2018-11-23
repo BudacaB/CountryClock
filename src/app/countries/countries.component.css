@@ -31,3 +31,11 @@ table {
     background-color: rgb(136, 197, 57);
     font-size: larger
 }
+
+.instructions {
+    text-align: center;
+    font-family: 'Allerta Stencil';
+    font-size: 20px;
+    position:relative;
+    left:10%;
+}
