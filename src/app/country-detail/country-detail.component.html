@@ -33,13 +33,26 @@
 </div> -->
 
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-sm" id="country">
       {{countryName}}
       <img class="flag" src="{{country.flag}}" alt="countryflag">
     </div>
     <div class="col-sm" id="time">
+      Local Time in {{ country.capital }}: <br> {{ localTime }}
+    </div>
+  </div>
+</div> -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6" id="country">
+      {{countryName}}
+      <img class="flag" src="{{country.flag}}" alt="countryflag">
+    </div>
+    <div class="col-sm-9 col-md-6" id="time">
       Local Time in {{ country.capital }}: <br> {{ localTime }}
     </div>
   </div>

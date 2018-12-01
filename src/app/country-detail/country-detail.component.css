@@ -17,7 +17,7 @@ th {
 }
 
 #time {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
 }
 
@@ -28,7 +28,7 @@ th {
 
 #button {
     position:relative;
-    left:53%;
+    left: 53%;
 }
 
 .row {
