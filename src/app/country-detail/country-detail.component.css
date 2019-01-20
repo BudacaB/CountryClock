@@ -29,6 +29,7 @@ th {
 #button {
     position:relative;
     left: 53%;
+    margin-top: 50px;   
 }
 
 .row {

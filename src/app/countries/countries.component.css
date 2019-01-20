@@ -33,6 +33,7 @@ table {
 }
 
 .instructions {
+    margin-top: 50px;
     text-align: center;
     font-family: 'Allerta Stencil';
     font-size: 20px;
