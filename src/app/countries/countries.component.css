@@ -11,8 +11,9 @@ th {
 }
 
 table {
-    margin-left: 30%; 
-    margin-right: 10%;
+/*     margin-left: 30%; 
+    margin-right: 10%; */
+    margin: 50px auto;
 }
 
 @media screen and (max-width: 440px) {
@@ -33,10 +34,9 @@ table {
 }
 
 .instructions {
-    margin-top: 50px;
     text-align: center;
     font-family: 'Allerta Stencil';
     font-size: 20px;
-    position: relative;
-    left:10%;
+    display: flex;
+    justify-content: center;
 }
