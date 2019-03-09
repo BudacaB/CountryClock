@@ -14,11 +14,13 @@ th {
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    color: #1c1259;
 }
 
 #time {
     font-size: 30px;
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    color: #1c1259;
 }
 
 .flag {
@@ -27,12 +29,16 @@ th {
 }
 
 #button {
-    position:relative;
-    left: 53%;
-    margin-top: 50px;   
+    background-color: #ee4266;
+    color: #fcd307;
 }
 
-.row {
+#button-wrapper {
+    display: block;
+    text-align: center;
+}
+
+#time-display {
     position:relative;
     left:18%;
     margin-top:10%;

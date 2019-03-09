@@ -2,41 +2,44 @@ table,
 td {
     text-align: center;
     border: 1px solid #333;
+    color: #1c1259;
 }
 
 table,
 th {
     text-align: center;
     border: 1px solid #333;
+    color: #1c1259;
 }
 
 table {
 /*     margin-left: 30%; 
     margin-right: 10%; */
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 440px) {
     table {
-        margin-top: 170px;
+        margin-top: 100px;
     }
 }
 
 @media screen and (min-width: 441px) {
     table {
-        margin-top: 130px;
+        margin-top: 100px;
     }
-}
+} */
 
 .column-highlighter {
-    background-color: rgb(136, 197, 57);
-    font-size: larger
+    background-color: #fcd307;
+    font-size: 1.5vw;
 }
 
-.instructions {
+#instructions {
     text-align: center;
     font-family: 'Allerta Stencil';
-    font-size: 20px;
+    font-size: 1.7vw;
     display: flex;
     justify-content: center;
+    color: #1c1259;
 }

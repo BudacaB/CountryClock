@@ -1,22 +1,24 @@
-<div class="instructions">
+<div class="row" id="instructions">
   Want to see the local time in one of these countries? <br>
   Just click it! :)
 </div>
 
-<table cellpadding="10" *ngIf="hasServerResponded">
-  <tr>
-    <th colspan="2" class="column-highlighter">Country</th>
-    <th colspan="2" class="column-highlighter">Capital</th>
-  </tr>
-  <tr *ngFor="let tara of tari">
-    <td colspan="2" class="column-highlighter">
-      <a (click)="seeCountryDetails(tara.name)">
-      {{tara.name}}
-    </a>
-    </td>
-    <td colspan="2" class="column-highlighter">{{tara.capital}}</td>
-  </tr>
-</table>
+<div class="row">
+  <table cellpadding="10" *ngIf="hasServerResponded">
+    <tr>
+      <th colspan="2" class="column-highlighter">Country</th>
+      <th colspan="2" class="column-highlighter">Capital</th>
+    </tr>
+    <tr *ngFor="let tara of tari">
+      <td colspan="2" class="column-highlighter">
+        <a (click)="seeCountryDetails(tara.name)">
+        {{tara.name}}
+      </a>
+      </td>
+      <td colspan="2" class="column-highlighter">{{tara.capital}}</td>
+    </tr>
+  </table>
+</div>
 <br>
 
 

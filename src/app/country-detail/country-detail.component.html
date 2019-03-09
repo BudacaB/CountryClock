@@ -15,10 +15,11 @@
 
 <!-- <div>{{countryTimezone}}</div> -->
 
-
-<button id="button" type="button" class="btn btn-primary" routerLink="/home">
-  Return to Countries
-</button>
+<div class="row" id="button-wrapper">
+  <button id="button" type="button" class="btn btn-primary" routerLink="/home">
+    Return to Countries
+  </button>
+</div>
 
 
 
@@ -47,7 +48,7 @@
 
 
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" id="time-display">
     <div class="col-sm-3 col-md-6" id="country">
       {{countryName}}
       <img class="flag" src="{{country.flag}}" alt="countryflag">
